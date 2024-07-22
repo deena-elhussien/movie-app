@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!-- start nav -->
+    <div class=" sideNav position-fixed top-0 z-3 ">
+        <nav class="d-flex vh-100">
+            <div class="contain d-flex flex-column justify-content-between bg-black text-white ">
+                <ul class="py-4">
+                    <li class="pb-3">
+                        <a href="" class="link position-relative">Now Playing</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="link position-relative">Popular</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="link position-relative">Top Rated</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="link position-relative">Trending</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="link position-relative">Upcoming</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="" class="link position-relative">Contact Us</a>
+                    </li>
+                    
+                </ul>
+        
+                <div class="bottomNav ps-4">
+                    <i class="fa-brands fa-facebook-f  "></i>
+                    <i class="fa-brands fa-twitter px-3"></i>
+                    <i class="fa-solid fa-globe "></i>
+                    <p class="pt-3 mb-0 col-9">
+                        Copyright © 2022 All Rights Reserved.
+                    </p>
+                    <p >Created by <span class="text-danger">Housam Ramadan</span></p>
+                </div>
+                
+            </div>
+    
+            <div class="slide bg-white d-flex flex-column justify-content-between align-items-center ">
+                <div class="logo text-center py-4">
+                    <img src="./imgs/logo.png" class="w-50" alt="logo">
+                </div>
+                <i class="fa-solid fa-xmark fs-3 " id="close"></i>
+                <div class="shareIcon py-4">
+                <i class="fa-solid fa-globe py-2 fs-6"></i>
+                <i class="fa-solid fa-share-nodes fs-6 "></i>
+                </div>
+            </div>
+            
+        </nav>
+    </div>
+    <!-- end nav -->
+
+    <!-- search -->
+    <section>
+        <div class="container">
+            <div class="searchInput">
+                <input type="search" placeholder="Search" class="w-75 form-control mx-auto px-3 py-1 rounded-5 border-white border-2 mt-5 bg-transparent text-white">
+            </div>
+
+            <div class="row gy-3 gx-4 pt-5" id="rowData">
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="contact py-5">
+        
+
+        <div class="container">
+            <h3 class="text-white">contact Us</h3>
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="line py-3 ">
+                        <input id="nameInput" onkeyup='validInputs()' type="text" placeholder="Enter Your Name" class="form-control bg-transparent text-white rounded-0">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="line py-3">
+                        <input id="emailInput" onkeyup='validInputs()' type="email" placeholder="Enter Your Email" class="form-control bg-transparent text-white rounded-0">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="line py-3">
+                        <input id="phoneInput" onkeyup='validInputs()' type="number" placeholder="Enter Your Phone" class="form-control bg-transparent text-white rounded-0">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="line py-3">
+                        <input id="ageInput" type="number" onkeyup='validInputs()' placeholder="Enter Your Age" class="form-control bg-transparent text-white rounded-0">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="line py-3">
+                        <input id="passInput" type="password" onkeyup='validInputs()' placeholder="Enter Your Password" class="form-control bg-transparent text-white rounded-0">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="line py-3">
+                        <input id="repassInput" onkeyup='validInputs()' type="password" placeholder="ReEnter Password" class="form-control bg-transparent text-white rounded-0">
+                    </div>
+                </div>
+               
+            </div>
+            <button class="btn  position-absolute bg-black text-white px-3 py-1 ms-3 submit">Submit</button>
+        </div>
+    </section>
+
+    <div class="to-top d-flex justify-content-center align-items-center bg-black d-none">
+        <i class="fa-solid fa-arrow-up text-white"></i>
+    </div>
+
+    <div class="loading d-flex justify-content-center align-items-center position-fixed top-0 left-0 w-100 h-100 d-none">
+        <span class="loader"></span>
+    </div>
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

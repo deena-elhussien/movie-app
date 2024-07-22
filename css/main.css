@@ -1,0 +1,134 @@
+body{
+    background-color: #0D0D0D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    all: unset;
+    cursor:pointer;
+    transition: all 0.5s;
+    /* color:#f9f6f6; */
+}
+li{
+    list-style: none;
+}
+li a:hover{
+    color:#B20B00;
+}
+
+.shareIcon i{
+    display:block;
+}
+.bottomNav , .shareIcon i{
+    font-size: 14px;
+    cursor:pointer;
+}
+i#close{
+    cursor:pointer;
+}
+.bottomNav p{
+    color:#999999;
+}
+
+
+.searchInput .form-control:focus{
+    border: 2px solid white;
+    outline: none; 
+    box-shadow: none;
+}
+::placeholder{
+    color:#6C757D !important;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity:0;
+    transition: all 0.5s;
+}
+
+.card{
+    overflow: hidden;
+}
+.card img{
+    transition: all 0.5s;
+}
+.card:hover img{
+   transform: scale(1.2)  rotate(7deg);
+   
+}
+
+.card:hover .layer{
+    opacity:1;
+}
+
+.layer h3{
+    font-size:22px;
+}
+
+.layer p{
+    font-size: 14px;
+}
+
+
+
+.circle{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border:2px solid #0B650A;
+}
+
+
+.contact ::placeholder{
+    text-align:center;
+}
+.contact input.form-control:focus{
+    outline: none; 
+    box-shadow: none;
+    border-color:#6C757D;
+}
+.line input{
+    border:none;
+    border-bottom: 1px solid #6C757D;
+}
+
+.contact button{
+    transition:all 0.5s;
+   
+
+}
+.contact button:hover{
+    background-color: #fff !important;
+    color:#333 !important;
+}
+
+.to-top{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+
